@@ -1,18 +1,25 @@
 class Animal
- def pular
-    puts'Toing! toim! bóim!'
- end
+    def initialize(nome)
+ @nome=nome
+end
 
- def dormir
-    puts 'zzZzz'
-   end
+def emitir_som
+  end
 end
 
 class Cachorro < Animal
-    def latir
-    puts 'Au au'
+   def emitir_som
+    puts "au au !"
    end
-end 
-Cachorro=Cachorro.new
-Cachorro.pular
-Cachorro.dormmir 
+end
+
+class Gato<Animal
+    def emitir_som
+     puts"Miau!"  
+    end 
+end   
+
+cachorro= Cachorro.new("Rex")
+gato=Gato.new("Whiskers")
+cachorro.emitir_som #Saida: Au au !
+gato.emitir_som #saida: Miau!
