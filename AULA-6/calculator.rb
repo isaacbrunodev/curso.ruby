@@ -15,4 +15,16 @@ class DynamicCalculator
     super
     end
   end
-end                     
+end 
+# Exemplo de uso de classe DynamicCalculator
+calclator = DynamicCalculator.new
+
+#Realizando as operações matemáticas sem a necessidade de definir métodos na classe
+puts calculator.add(2,3)
+puts calculator.subtract(5,2)
+puts calculator.multiply(4,5)
+puts calculator.divide(10,2)
+
+#Operações usando outros operadores que não estão definidos na classe
+puts calculator.plus(3,4)
+puts calculator.-(8,3)
