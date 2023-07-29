@@ -4,14 +4,13 @@ class Person
     @name=name
     @age=age
     end
-    
+
  def check
-    puts "Instancia da classe iniciada com sucesso"
-    puts"Name=#{name}"
-    puts"Idade=#{age}"
-   end
+ puts "Instância da classe iniciada com os valores"
+ puts "Name=#{name}"
+ puts "Idade =#{age}"
+ end
 end
 
-person =PErson.new('Joao', 12)
+person=Person.new ('João',12)
 person.check
-    
