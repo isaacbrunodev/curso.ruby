@@ -28,4 +28,22 @@ end
 def gancho
     imprimir 'Gancho'
   end
-end      
+end
+
+class LutadorX
+include Pernas
+include Bracos
+end
+
+class LutadorY
+include Pernas
+end
+
+lutadorx=LutadorX.new
+lutadorx.chute_frontal
+lutadorx.jab_de_direita
+
+lutadory=LutadorY.new
+lutadory.chute_lateral
+
+
