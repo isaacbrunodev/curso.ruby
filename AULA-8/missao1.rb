@@ -1,5 +1,5 @@
 #Criação da lambda
-primeira_letra_maiuscula = lambda do |nome|
+primeira_letra_maiuscula = lambda { |nome| puts nome.capitalize}
    puts nome.capitalize
 end
 
