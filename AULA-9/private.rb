@@ -1,15 +1,34 @@
-class Foo
-    def call_private
-      bar
-end
-
-private 
-
-def bar
-   puts "private method"
+class BankAccount
+  def initialize(balance)
+    @balance=balance
   end
-end
+  
+  def witthdraw(amount)
+    if amount <=@balance
+      update_balance(-amount)
+      puts "Retirada de #{amount} feita com sucesso"
+    else
+      puts "Saldo insuficiente"
+    end
+  end
+  
+  def deposit(amount)
+    updae_balance(amount)
+    puts "Depósito de #{amount} feito com sucesso"
+  end
 
-foo = Foo.new
+  def display_balance
+    puts "Saldo atual:#{@balance}"
+  end
 
-foo.call_private
+  private
+
+  def update_balance(amount)
+    @balance+=amount
+   end
+  end
+  
+  account= BankAccount.new(1000)
+  account.display_balance
+  account.withdraw(500)
+  account.display_balance
